@@ -1,25 +1,28 @@
-# 🎟️ Aplikasi POS Ticketing Wisata (Mobile Flutter)
+# 🛠️ API POS Ticketing Wisata (Laravel 10)
 
-Aplikasi mobile berbasis **Flutter** untuk sistem **POS Ticketing Wisata**.  
-Digunakan oleh admin/petugas untuk mengelola penjualan tiket wisata langsung dari perangkat mobile.
+Backend REST API untuk menunjang **Aplikasi POS Ticketing Wisata**.  
+Dikembangkan menggunakan **Laravel 10**, **MySQL**, dan integrasi pembayaran **Midtrans (QRIS)**.
+
+API ini digunakan oleh aplikasi frontend (Flutter) untuk mengelola transaksi tiket wisata baik **offline** maupun **online**.
 
 ---
 
-## ✨ Fitur Aplikasi
+## ✨ Fitur API
 
--   📋 **Menu & Order** — Kelola tiket/menu & lakukan order
--   🍽️ **Table Management** — Atur nomor meja untuk transaksi
+-   📋 **Menu & Order** — CRUD menu / tiket & order
+-   🍽️ **Table Management** — Manajemen nomor meja
 -   💾 **Save Order (Open Bill)** — Simpan order sebelum pembayaran
--   💳 **Payment** — Dukungan pembayaran **Tunai & QRIS (Midtrans)**
--   🏷️ **Diskon & Pajak** — Tambahkan diskon & hitung pajak otomatis
--   🖨️ **Printer Thermal** — Support **58mm / 80mm**
--   📊 **Laporan Harian** — Rekap transaksi per hari
+-   💳 **Payment** — Pembayaran **Tunai & QRIS (Midtrans)**
+-   🏷️ **Diskon & Pajak** — Perhitungan otomatis diskon & pajak
+-   🖨️ **Printer Thermal** — Data transaksi siap cetak untuk printer **58mm/80mm**
+-   📊 **Laporan Harian** — Rekap penjualan per hari
 
 ---
 
 ## 🛠️ Tech Stack
 
--   **Mobile:** Flutter (Dart)
--   **State Management:** Provider / Riverpod
--   **API:** Laravel 10 (REST API)
--   **Printer Support:** Bluetooth Thermal Printer
+-   **Framework:** Laravel 10
+-   **Database:** MySQL
+-   **Auth:** Laravel Sanctum / JWT
+-   **Payment Gateway:** Midtrans (QRIS)
+-   **Printer Integration:** ESC/POS response (58mm / 80mm)
